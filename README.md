@@ -196,3 +196,69 @@ Accept: application/json
 
 #### Screenshot:
 ![Alt Text](screenshot/deleteUser.png)
+
+
+---
+
+### Career Data
+
+**URL:** `/api/career`
+
+**Method:** `GET`
+
+**Response:**
+```json
+{
+    "total": 2,
+    "data": [
+        {
+            "nama": "John Doe",
+            "ymd": "20240101",
+            "nim": "12345678"
+        },
+        {
+            "nama": "Jane Smith",
+            "ymd": "20240202",
+            "nim": "87654321"
+        }
+    ]
+}
+```
+
+#### Screenshot:
+![Alt Text](screenshot/careerData.png)
+### Search Career Data
+
+**URL:** `/api/career/cari`
+
+**Method:** `GET`
+
+**Query Parameters:**
+- `nama` (string, optional)
+- `nim` (string, optional)
+- `ymd` (string, optional, format: YYYYMMDD)
+
+**Response:**
+```json
+{
+    "total": 1,
+    "data": [
+        {
+            "nama": "John Doe",
+            "ymd": "20240101",
+            "nim": "12345678"
+        }
+    ]
+}
+```
+
+#### Screenshot:
+
+### Cari Nama
+![Alt Text](screenshot/cariNama.png)
+
+### Cari NIM
+![Alt Text](screenshot/cariNim.png)
+
+### Cari YMD
+![Alt Text](screenshot/cariYmd.png)
