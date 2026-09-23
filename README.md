@@ -1,6 +1,9 @@
 ## Backend Career Test - Adhivasindo
 ### Nama : Aditya Prasetya Kusnadi
 
+
+#### note : table hasil exportnya ada di database/hasil_export/dump-backend_career_test-202609231717.sql
+
 #### 1. End point Login
 
 **URL:** `/api/login`
